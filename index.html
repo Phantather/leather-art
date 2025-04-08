@@ -20,7 +20,7 @@
         <nav class="flex justify-between items-center">
             <h1 class="text-[30px] uppercase text-primary"><img src="./src/assets/logo.svg" alt="logo"
                                                                 class="w-24 h-24"></h1>
-            <div class="flex justify-between items-center gap-5">
+            <div class="flex sm:hidden justify-between items-center gap-5">
                 <a href="#about" class="text-[#BAB9B9] text-[18px] hover:text-white transition">About Us</a>
                 <a href="#why-us" class="text-[#BAB9B9] text-[18px] hover:text-white transition">Why Choose Us</a>
                 <a href="#services" class="text-[#BAB9B9] text-[18px] hover:text-white transition">Services</a>
@@ -28,7 +28,7 @@
                 <a href="#gallery" class="text-[#BAB9B9] text-[18px] hover:text-white transition">Before / After</a>
                 <a href="#contact" class="text-[#BAB9B9] text-[18px] hover:text-white transition">Contact</a>
             </div>
-            <ul class="flex gap-5">
+            <ul class="flex sm:hidden gap-5">
                 <li>
                     <a class="text-[28px]"
                        href="https://api.whatsapp.com/send/?phone=17735934823&text&type=phone_number&app_absent=0"
@@ -36,11 +36,6 @@
                         <span class="text-white icon-whatsapp"></span>
                     </a>
                 </li>
-                <!--                <li>-->
-                <!--                    <a class="text-primary text-[30px]" href="">-->
-                <!--                        <span class="text-primary icon-facebook"></span>-->
-                <!--                    </a>-->
-                <!--                </li>-->
                 <li>
                     <a class="text-[28px]" href="mailto:info@leatherartchicago.com" target="_blank">
                         <span class="text-white icon-mail"></span>
@@ -52,6 +47,41 @@
                     </a>
                 </li>
             </ul>
+
+            <div class="hidden sm:block">
+                <div class="burger-lines">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                    <label class="burger" for="burger-checkbox"></label>
+                </div>
+            </div>
+
+            <div class="hidden sm:flex flex-col gap-[20px] bg-[#F3F4F6] menu">
+                <a href="#about" class="text-[18px] hover:text-white transition">About Us</a>
+                <a href="#why-us" class="text-[18px] hover:text-white transition">Why Choose Us</a>
+                <a href="#services" class="text-[18px] hover:text-white transition">Services</a>
+                <a href="#pricing" class="text-[18px] hover:text-white transition">Pricing</a>
+                <a href="#gallery" class="text-[18px] hover:text-white transition">Before / After</a>
+                <a href="#contact" class="text-[18px] hover:text-white transition">Contact</a>
+                <ul class="flex gap-5">
+                    <li>
+                        <a class="text-[28px]"
+                           href="https://api.whatsapp.com/send/?phone=17735934823&text&type=phone_number&app_absent=0"
+                           target="_blank">
+                            <span class="icon-whatsapp"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-[28px]" href="mailto:info@leatherartchicago.com" target="_blank">
+                            <span class="icon-mail"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-[28px]" href="tel:+17735934823" target="_blank">
+                            <span class="icon-phone"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </div>
 </header>
@@ -119,7 +149,7 @@
     <section class="py-40">
         <div class="container">
             <h2 class="text-center text-3xl font-bold text-primary mb-10">Our Certificates</h2>
-            <div class="grid grid-cols-3 gap-10 justify-items-center">
+            <div class="grid grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-5 justify-items-center">
                 <a href="./src/assets/cer1.pdf" target="_blank" class="transition hover:scale-105">
                     <img src="./src/assets/cer1.jpg" alt="Certificate 1" class="w-full max-w-xs rounded shadow-lg">
                 </a>
@@ -137,10 +167,10 @@
     <section class="py-20">
         <div class="container">
             <h2 class="text-center text-3xl font-bold text-primary mb-10">Types of Services & Pricing</h2>
-            <div class="grid grid-cols-2 gap-10">
+            <div class="grid grid-cols-2 sm:grid-cols-1 gap-5">
                 <div class="bg-white p-5 rounded">
                     <h3 class="text-xl font-semibold mb-5">1. Cleaning and restoration of leather furniture:</h3>
-                    <div class="grid grid-cols-2 gap-2">
+                    <div class="grid grid-cols-2 xs:grid-cols-1 gap-2">
                         <p>• Sofas</p>
                         <p>• Armchairs</p>
                         <p>• Chairs</p>
@@ -151,7 +181,7 @@
                 </div>
                 <div class="bg-white p-5 rounded">
                     <h3 class="text-xl font-semibold mb-5"> 2. Cleaning and restoration of leather car interiors:</h3>
-                    <div class="grid grid-cols-2 gap-2">
+                    <div class="grid grid-cols-2 xs:grid-cols-1 gap-2">
                         <p>• Seat upholstery</p>
                         <p>• Door panels</p>
                         <p>• Armrests</p>
@@ -159,7 +189,7 @@
                         <p>• Leather dashboards</p>
                     </div>
                 </div>
-                <div class="col-span-2 bg-white p-5 rounded">
+                <div class="col-span-2 sm:col-span-1 bg-white p-5 rounded">
                     <p class="text-center">
                         We eliminate cracks, scuffs, scratches, burns, cuts, and punctures.
                         We remove stains, deep-seated dirt, sweat and grease marks, mold, and traces of pens and
@@ -174,37 +204,37 @@
     <section class="py-20">
         <div class="container">
             <h2 class="text-center text-3xl font-bold text-primary mb-10">Service & Pricing</h2>
-            <div class="grid grid-cols-2 gap-10">
+            <div class="grid grid-cols-2 sm:grid-cols-1 gap-10">
                 <div class="bg-white p-5 rounded">
                     <h3 class="text-xl font-semibold mb-5">1. Damage Restoration</h3>
-                    <div class="grid grid-cols-2 gap-2">
+                    <div class="grid grid-cols-2 sm:grid-cols-1  gap-2">
                         <p>Scratches, cracks, burns, cuts, etc.</p>
                         <p>From $100</p>
                     </div>
                 </div>
                 <div class="bg-white p-5 rounded">
                     <h3 class="text-xl font-semibold mb-5">2. Car Interior Deep Cleaning</h3>
-                    <div class="grid grid-cols-2 gap-2">
+                    <div class="grid grid-cols-2 sm:grid-cols-1  gap-2">
                         <p>$200–250</p>
                     </div>
                 </div>
 
                 <div class="bg-white p-5 rounded">
                     <h3 class="text-xl font-semibold mb-5">3. Leather Furniture Cleaning</h3>
-                    <div class="grid grid-cols-2 gap-2">
+                    <div class="grid grid-cols-2 sm:grid-cols-1  gap-2">
                         <p>Sofas, chairs, armchairs, etc.</p>
                         <p>From $50 per seat</p>
                     </div>
                 </div>
                 <div class="bg-white p-5 rounded">
                     <h3 class="text-xl font-semibold mb-5">4. Door Panel Restoration</h3>
-                    <div class="grid grid-cols-2 gap-2">
+                    <div class="grid grid-cols-2 sm:grid-cols-1  gap-2">
                         <p>From 100$</p>
                     </div>
                 </div>
                 <div class="bg-white p-5 rounded">
                     <h3 class="text-xl font-semibold mb-5">5. Recoloring of leather furniture with restoration work included </h3>
-                    <div class="grid grid-cols-2 gap-2">
+                    <div class="grid grid-cols-2 sm:grid-cols-1  gap-2">
                         <p>200$ per seat</p>
                     </div>
                 </div>
@@ -218,7 +248,7 @@
             <h2 class="text-3xl font-bold text-primary mb-6">Just 2 simple steps separate your old furniture from a new life.</h2>
             <p class="text-xl mb-8">You can send us a photo right now!</p>
 
-            <div class="flex justify-center gap-8 mb-10">
+            <div class="flex justify-center sm:flex-col sm:items-center gap-8 mb-10">
                 <div class="flex flex-col items-center max-w-xs">
                     <div class="bg-primary rounded-full w-16 h-16 flex items-center justify-center mb-4 text-2xl">📸</div>
                     <p>You send us a photo of the item</p>
@@ -241,8 +271,8 @@
 
 
 <footer class="py-5 bg-[#101C26]">
-    <div class="container flex justify-between items-center text-white">
-        <p>This website is operated by Leather Art Chicago LLC, an Illinois limited liability company</p>
+    <div class="container flex justify-between sm:flex-col sm:gap-5 items-center text-white">
+        <p class="sm:text-center">This website is operated by Leather Art Chicago LLC, an Illinois limited liability company</p>
         <p>© 2025 Leather Art Chicago LLC. All rights reserved.</p>
     </div>
 </footer>
@@ -296,45 +326,6 @@
 </div>
 
 
-<script>
-    // Управление модальным окном
-    const modal = document.getElementById('contactModal');
-    const openBtn = document.getElementById('openModalBtn');
-    const closeBtn = document.getElementById('closeModalBtn');
-
-    openBtn.addEventListener('click', () => {
-        modal.classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
-    });
-
-    closeBtn.addEventListener('click', () => {
-        modal.classList.add('hidden');
-        document.body.style.overflow = 'auto';
-    });
-
-    window.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            modal.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-    });
-
-    // Ограничение количества файлов (3)
-    document.getElementById('photos').addEventListener('change', function() {
-        if (this.files.length > 3) {
-            alert('Maximum 3 files allowed');
-            this.value = '';
-        }
-    });
-
-    // Обработка отправки формы
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-        const submitBtn = this.querySelector('button[type="submit"]');
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = 'Sending...';
-
-        // Formspree автоматически обработает отправку
-    });
-</script>
+<script src="./src/js/main.js"></script>
 </body>
 </html>
