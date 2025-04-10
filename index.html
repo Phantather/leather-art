@@ -36,71 +36,34 @@
 
 <header class="py-2 sticky top-0 left-0 w-full bg-[#fff] border-b-[10px] border-b-solid border-b-[#b46b3a] z-50">
     <div class="container">
-        <nav class="flex justify-between items-center">
-            <h1 class="text-[30px] uppercase text-primary"><img src="./src/assets/logo.svg" alt="logo"
+        <nav class="hidden sm:flex justify-between items-center">
+            <h1 class=" text-[30px] uppercase text-primary"><img src="./src/assets/logo.svg" alt="logo"
                                                                 class="w-24 h-24"></h1>
-            <div class="flex sm:hidden justify-between items-center gap-5">
-                <a href="#about" class="text-primaryBlack text-[18px] hover:text-[#00C6BF] transition">About Us</a>
-                <a href="#why-us" class="text-primaryBlack text-[18px] hover:text-[#00C6BF] transition">Why Choose Us</a>
-                <a href="#services" class="text-primaryBlack text-[18px] hover:text-[#00C6BF] transition">Services</a>
-                <a href="#pricing" class="text-primaryBlack text-[18px] hover:text-[#00C6BF] transition">Pricing</a>
-                <a href="#gallery" class="text-primaryBlack text-[18px] hover:text-[#00C6BF] transition">Before / After</a>
-                <a href="#contact" class="text-primaryBlack text-[18px] hover:text-[#00C6BF] transition">Contact</a>
-            </div>
-            <ul class="flex sm:hidden gap-5">
-                <li>
-                    <a class="text-[28px]"
-                       href="https://api.whatsapp.com/send/?phone=17735934823&text&type=phone_number&app_absent=0"
-                       target="_blank">
-                        <span class="text-primaryBlack icon-whatsapp"></span>
-                    </a>
-                </li>
-                <li>
-                    <a class="text-[28px]" href="mailto:info@leatherartchicago.com" target="_blank">
-                        <span class="text-primaryBlack icon-mail"></span>
-                    </a>
-                </li>
-                <li>
-                    <a class="text-[28px]" href="tel:+17735934823" target="_blank">
-                        <span class="text-primaryBlack icon-phone"></span>
-                    </a>
-                </li>
-            </ul>
-
-            <ul class="hidden sm:flex gap-5">
-                <li>
-                    <a class="text-[28px]"
-                       href="https://api.whatsapp.com/send/?phone=17735934823&text&type=phone_number&app_absent=0"
-                       target="_blank">
-                        <span class="text-primaryBlack icon-whatsapp"></span>
-                    </a>
-                </li>
-                <li>
-                    <a class="text-[28px]" href="mailto:info@leatherartchicago.com" target="_blank">
-                        <span class="text-primaryBlack icon-mail"></span>
-                    </a>
-                </li>
-                <li>
-                    <a class="text-[28px]" href="tel:+17735934823" target="_blank">
-                        <span class="text-primaryBlack icon-phone"></span>
-                    </a>
-                </li>
-            </ul>
-
-            <div class="hidden sm:block">
+            <div class="block">
                 <div class="burger-lines">
                     <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
                     <label class="burger" for="burger-checkbox"></label>
                 </div>
             </div>
-
-            <div class="hidden sm:flex flex-col gap-[20px] bg-white menu">
+            <div class="flex flex-col gap-[20px] bg-white menu">
                 <a href="#about" class="text-[18px] hover:text-primary transition">About Us</a>
                 <a href="#why-us" class="text-[18px] hover:text-primary transition">Why Choose Us</a>
                 <a href="#services" class="text-[18px] hover:text-primary transition">Services</a>
                 <a href="#pricing" class="text-[18px] hover:text-primary transition">Pricing</a>
                 <a href="#gallery" class="text-[18px] hover:text-primary transition">Before / After</a>
                 <a href="#contact" class="text-[18px] hover:text-primary transition">Contact</a>
+            </div>
+        </nav>
+        <nav class="flex sm:hidden justify-center items-center">
+            <div class="flex items-center gap-5">
+                <a href="#about" class="text-primaryBlack text-[18px] hover:text-primary transition">About Us</a>
+                <a href="#why-us" class="text-primaryBlack text-[18px] hover:text-primary transition">Why Choose Us</a>
+                <a href="#services" class="text-primaryBlack text-[18px] hover:text-primary transition">Services</a>
+                <h1 class="text-[30px] uppercase text-primary"><img src="./src/assets/logo.svg" alt="logo"
+                                                                    class="w-24 h-24"></h1>
+                <a href="#pricing" class="text-primaryBlack text-[18px] hover:text-primary transition">Pricing</a>
+                <a href="#gallery" class="text-primaryBlack text-[18px] hover:text-primary transition">Before / After</a>
+                <a href="#contact" class="text-primaryBlack text-[18px] hover:text-primary transition">Contact</a>
             </div>
         </nav>
     </div>

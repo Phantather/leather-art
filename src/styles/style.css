@@ -33,7 +33,7 @@ body {
 
 .banner {
     position: relative;
-    background: url("../assets/banner.jpeg") center/cover no-repeat fixed;
+    background: url("../assets/banner.jpeg") center/cover no-repeat;
 }
 
 .banner::before {
@@ -123,7 +123,7 @@ body {
 
 @keyframes pulse {
     0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
+    50% { transform: scale(1.1); }
     100% { transform: scale(1); }
 }
 #socialsToggle {
