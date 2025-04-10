@@ -26,6 +26,11 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+.desc {
+    font-family: 'Poppins', sans-serif;
+}
+
 .banner {
     background: url("../assets/banner.jpeg") center/cover no-repeat;
 }
