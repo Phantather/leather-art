@@ -33,7 +33,7 @@ body {
 
 .banner {
     position: relative;
-    background: url("../assets/banner.jpeg") center/cover no-repeat;
+    background: url("../assets/banner.jpeg") center/cover no-repeat fixed;
 }
 
 .banner::before {
@@ -109,4 +109,23 @@ body {
 
 .menu-active {
     transform: translateX(0);
+}
+
+#socialsDropdown {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.2s, transform 0.2s;
+}
+#socialsDropdown:not(.hidden) {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+#socialsToggle {
+    animation: pulse 2s infinite;
 }

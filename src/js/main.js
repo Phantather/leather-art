@@ -38,8 +38,24 @@ window.addEventListener('click', (e) => {
     }
 });
 
+
+// Управление кнопкой социальных сетей
+const socialsToggle = document.getElementById('socialsToggle');
+const socialsDropdown = document.getElementById('socialsDropdown');
+
+socialsToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    socialsDropdown.classList.toggle('hidden');
+});
+
+// Закрывать меню при клике вне его
+document.addEventListener('click', (e) => {
+    if (!socialsDropdown.contains(e.target)){
+        socialsDropdown.classList.add('hidden');
+    }
+});
 // Ограничение количества файлов (3)
-document.getElementById('photos').addEventListener('change', function() {
+document.getElementById('photos').addEventListener('change', function () {
     if (this.files.length > 3) {
         alert('Maximum 3 files allowed');
         this.value = '';
@@ -47,7 +63,7 @@ document.getElementById('photos').addEventListener('change', function() {
 });
 
 // Обработка отправки формы
-document.getElementById('contactForm').addEventListener('submit', function(e) {
+document.getElementById('contactForm').addEventListener('submit', function (e) {
     const submitBtn = this.querySelector('button[type="submit"]');
     submitBtn.disabled = true;
     submitBtn.innerHTML = 'Sending...';
