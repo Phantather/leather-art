@@ -1,3 +1,50 @@
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 3000,  // Интервал между переключениями (3 секунды)
+        disableOnInteraction: false, // Продолжать автопрокрутку после взаимодействия
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        375: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 25
+        },
+
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 40
+        }
+    }
+});
+
+
+
 let burgerCheckbox = document.querySelector('.burger-checkbox');
 let burger = document.querySelector('.burger')
 let menu = document.querySelector('.menu')
@@ -14,7 +61,6 @@ menuLinks.forEach(link => {
         burgerCheckbox.checked = false;
     });
 });
-
 
 // Управление модальным окном
 const modal = document.getElementById('contactModal');
