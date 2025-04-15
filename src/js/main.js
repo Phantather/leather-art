@@ -116,3 +116,13 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 
     // Formspree автоматически обработает отправку
 });
+
+
+Fancybox.bind("[data-fancybox='gallery']", {
+    infinite: true,
+    Thumbs: {
+        type: "modern",
+        show: true
+    },
+    animated: false,
+});
