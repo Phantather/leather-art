@@ -157,3 +157,9 @@ body {
 #socialsToggle {
     animation: pulse 2s infinite;
 }
+
+@media (max-width: 768px) {
+    section {
+        scroll-margin-top: 90px; /* Высота header на мобильных устройствах */
+    }
+}
