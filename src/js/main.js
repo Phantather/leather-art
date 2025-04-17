@@ -5,10 +5,10 @@ var swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         clickable: true,
     },
-    // autoplay: {
-    //     delay: 3000,  // Интервал между переключениями (3 секунды)
-    //     disableOnInteraction: false, // Продолжать автопрокрутку после взаимодействия
-    // },
+    autoplay: {
+        delay: 3000,  // Интервал между переключениями (3 секунды)
+        disableOnInteraction: false, // Продолжать автопрокрутку после взаимодействия
+    },
     autoHeight: true,
     navigation: {
         nextEl: ".swiper-button-next",
