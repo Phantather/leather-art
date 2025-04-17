@@ -40,6 +40,8 @@
         <nav class="hidden sm:flex justify-between items-center">
             <h1 class=" text-[30px] uppercase text-primary"><img src="./src/assets/logo.svg" alt="logo"
                                                                 class="w-24 h-24"></h1>
+
+            <p class="text-primary text-[20px] uppercase">Leather as an art</p>
             <div class="block">
                 <div class="burger-lines">
                     <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
@@ -55,6 +57,7 @@
                 <a href="#contact" class="text-[18px] hover:text-primary transition">Contact</a>
             </div>
         </nav>
+
         <nav class="flex sm:hidden justify-center items-center">
             <div class="flex items-center gap-5">
                 <a href="#about" class="text-primaryBlack text-[18px] hover:text-primary transition">About Us</a>
@@ -75,9 +78,10 @@
     <section class="py-[170px] banner">
         <div class="container">
             <div class="flex flex-col gap-[20px]">
-                <h2 class="text-center text-4xl font-bold italic text-white uppercase relative z-10">Leather as an art</h2>
-                <p class="text-center mt-2 text-xl text-white relative z-10">Restoration & Deep Cleaning of Leather Furniture &
-                    Car Interior</p>
+<!--                <h2 class="text-center text-4xl font-bold italic text-white uppercase relative z-10">Leather as an art</h2>-->
+                <p class="text-center mt-2 text-xl text-white relative z-10">
+                    1. Cleaning and restoration of leather interiors of cars, aircraft and yachts.
+                </p>
 
                 <h2 class="text-center text-4xl font-bold text-white uppercase relative z-10">We provide our services all over Illinois</h2>
                 <h2 class="text-center text-4xl font-bold text-white uppercase relative z-10">We are mobile</h2>
@@ -194,7 +198,7 @@
                     </div>
                 </div>
                 <div class="bg-white p-5 rounded shadow-md shadow-primary/50">
-                    <h3 class="text-xl font-semibold mb-5"> 2. Cleaning and restoration of leather car interiors:</h3>
+                    <h3 class="text-xl font-semibold mb-5"> 2. Restoration and dry cleaning of cars, aircraft and yachts</h3>
                     <div class="grid grid-cols-2 xs:grid-cols-1 gap-2">
                         <p class="desc">• Seat upholstery</p>
                         <p class="desc">• Door panels</p>
@@ -228,7 +232,7 @@
                 <div class="bg-white p-5 rounded shadow-md shadow-primary/50">
                     <h3 class="text-xl font-semibold mb-5">2. Car Interior Deep Cleaning</h3>
                     <div class="grid grid-cols-2 sm:grid-cols-1  gap-2">
-                        <p>$150–200</p>
+                        <p>From $150</p>
                     </div>
                 </div>
 
@@ -262,18 +266,39 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <a href="./src/assets/ba1.jpeg" data-fancybox="gallery" data-caption="Caption #1">
+                        <a href="./src/assets/ba1.jpeg" data-fancybox="gallery" data-caption="#1">
                             <img class="rounded shadow-xl shadow-primary/50" src="./src/assets/ba1.jpeg" alt="before / after">
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="./src/assets/ba2.jpeg" data-fancybox="gallery" data-caption="Caption #1">
+                        <a href="./src/assets/ba2.jpeg" data-fancybox="gallery" data-caption="#2">
                             <img class="rounded shadow-xl shadow-primary/50" src="./src/assets/ba2.jpeg" alt="before / after">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                            <a href="./src/assets/ba3.jpeg" data-fancybox="gallery" data-caption="#3">
+                                <img class="rounded shadow-xl shadow-primary/50" src="./src/assets/ba3.jpeg" alt="before / after">
+                            </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./src/assets/ba4.jpeg" data-fancybox="gallery" data-caption="#4">
+                            <img class="rounded shadow-xl shadow-primary/50" src="./src/assets/ba4.jpeg" alt="before / after">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./src/assets/ba5.jpeg" data-fancybox="gallery" data-caption="#5">
+                            <img class="rounded shadow-xl shadow-primary/50" src="./src/assets/ba5.jpeg" alt="before / after">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./src/assets/ba6.jpeg" data-fancybox="gallery" data-caption="#6">
+                            <img class="rounded shadow-xl shadow-primary/50" src="./src/assets/ba6.jpeg" alt="before / after">
                         </a>
                     </div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+<!--                <div class="swiper-pagination"></div>-->
             </div>
         </div>
     </section>
@@ -295,17 +320,17 @@
             <div class="flex justify-center sm:flex-col sm:items-center gap-8 mb-10">
                 <div class="flex flex-col items-center max-w-xs">
                     <div class="bg-primary rounded-full w-16 h-16 flex items-center justify-center mb-4 text-2xl">📸</div>
-                    <p class="desc">You send us a photo of the item</p>
+                    <p class="desc"><span>First step:</span> You send us a photo of the item</p>
                 </div>
                 <div class="flex flex-col items-center max-w-xs">
                     <div class="bg-primary rounded-full w-16 h-16 flex items-center justify-center mb-4 text-2xl">📞</div>
-                    <p class="desc">We contact you to discuss the details</p>
+                    <p class="desc"><span>Second step:</span> We contact you to discuss the details</p>
                 </div>
             </div>
 
             <button
                     id="openModalBtn"
-                    class="bg-primary hover:bg-primaryDark text-white font-bold py-3 px-8 rounded-full text-lg transition"
+                    class="bg-primary hover:bg-primaryDark text-white font-bold py-3 px-8 rounded-full text-lg transition buttonToggle"
             >
                 Send Photos Now
             </button>

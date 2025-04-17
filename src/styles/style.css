@@ -51,9 +51,11 @@ body {
 
 .swiper {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
-
+.swiper-wrapper {
+    align-items: center!important;
+}
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -71,7 +73,16 @@ body {
 }
 
 .swiper-button-next , .swiper-button-prev {
-    color: #b46b3a;
+    color: #FFFFFF;
+    width: 50px;
+    height: 50px;
+    background: var(--primary);
+    border-radius: 50%;
+}
+
+.swiper-button-next::after , .swiper-button-prev::after {
+    font-size: 20px;
+    color: #fff;
 }
 
 .burger-checkbox {
@@ -157,6 +168,11 @@ body {
 #socialsToggle {
     animation: pulse 2s infinite;
 }
+
+#openModalBtn {
+    animation: pulse 3s infinite;
+}
+
 
 @media (max-width: 768px) {
     section {

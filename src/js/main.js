@@ -5,10 +5,11 @@ var swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         clickable: true,
     },
-    autoplay: {
-        delay: 3000,  // Интервал между переключениями (3 секунды)
-        disableOnInteraction: false, // Продолжать автопрокрутку после взаимодействия
-    },
+    // autoplay: {
+    //     delay: 3000,  // Интервал между переключениями (3 секунды)
+    //     disableOnInteraction: false, // Продолжать автопрокрутку после взаимодействия
+    // },
+    autoHeight: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -16,16 +17,19 @@ var swiper = new Swiper(".mySwiper", {
     loop: true,
     breakpoints: {
         320: {
-            slidesPerView: 2,
-            spaceBetween: 20
+            slidesPerView: 1,
+            spaceBetween: 20,
+
         },
         375: {
-            slidesPerView: 2,
-            spaceBetween: 20
+            slidesPerView: 1,
+            spaceBetween: 20,
+
         },
         480: {
-            slidesPerView: 2,
-            spaceBetween: 20
+            slidesPerView: 1,
+            spaceBetween: 20,
+
         },
         768: {
             slidesPerView: 2,
