@@ -106,8 +106,8 @@ document.addEventListener('click', (e) => {
 });
 // Ограничение количества файлов (3)
 document.getElementById('photos').addEventListener('change', function () {
-    if (this.files.length > 3) {
-        alert('Maximum 3 files allowed');
+    if (this.files.length > 5) {
+        alert('Maximum 5 files allowed');
         this.value = '';
     }
 });
