@@ -10,18 +10,11 @@
       "source": "/(.*)",
       "headers": [
         {
-          "key": "Accept-Ranges",
-          "value": "none"
-        },
-        {
           "key": "Cache-Control",
-          "value": "public, max-age=3600, must-revalidate"
-        },
-        {
-          "key": "Content-Type",
-          "value": "text/html; charset=utf-8"
+          "value": "public, max-age=3600"
         }
       ]
     }
-  ]
+  ],
+  "middleware": true
 }
