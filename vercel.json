@@ -1,27 +1,20 @@
 {
+  "version": 2,
+  "routes": [
+    {
+      "src": "/.*",
+      "headers": {
+        "Accept-Ranges": "none",
+        "Cache-Control": "public, max-age=3600, must-revalidate",
+        "Content-Type": "text/html; charset=utf-8"
+      },
+      "continue": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/application",
       "destination": "/src/pages/application/index.html"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Accept-Ranges",
-          "value": "none"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600, must-revalidate"
-        },
-        {
-          "key": "Content-Type",
-          "value": "text/html; charset=utf-8"
-        }
-      ]
     }
   ]
 }
