@@ -20,21 +20,8 @@
         {
           "key": "Content-Type",
           "value": "text/html; charset=utf-8"
-        },
-        {
-          "key": "Vary",
-          "value": "Accept-Encoding"
         }
       ]
-    }
-  ],
-  "routes": [
-    {
-      "src": "/.*",
-      "headers": {
-        "Accept-Ranges": "none"
-      },
-      "continue": true
     }
   ]
 }
