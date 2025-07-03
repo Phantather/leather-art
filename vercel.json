@@ -7,7 +7,7 @@
   ],
   "headers": [
     {
-      "source": "/",
+      "source": "/(.*)",
       "headers": [
         {
           "key": "Accept-Ranges",
@@ -16,19 +16,6 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=3600"
-        }
-      ]
-    },
-    {
-      "source": "/(.*).html",
-      "headers": [
-        {
-          "key": "Accept-Ranges",
-          "value": "none"
-        },
-        {
-          "key": "Content-Type",
-          "value": "text/html"
         }
       ]
     }
