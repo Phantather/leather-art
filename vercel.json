@@ -4,5 +4,33 @@
       "source": "/application",
       "destination": "/src/pages/application/index.html"
     }
+  ],
+  "headers": [
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Accept-Ranges",
+          "value": "none"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).html",
+      "headers": [
+        {
+          "key": "Accept-Ranges",
+          "value": "none"
+        },
+        {
+          "key": "Content-Type",
+          "value": "text/html"
+        }
+      ]
+    }
   ]
 }
