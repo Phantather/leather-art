@@ -2,7 +2,14 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/api"
+      "destination": "/api",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": "(?!facebookexternalhit).*"
+        }
+      ]
     },
     {
       "source": "/application",
