@@ -2,7 +2,7 @@ import { readFileSync } from 'fs';
 import { resolve } from 'path';
 
 export default function handler(req, res) {
-    const htmlPath = resolve(process.cwd(), 'index.html');
+    const htmlPath = resolve(process.cwd(), 'html/index.html');
     const htmlContent = readFileSync(htmlPath, 'utf8');
 
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
